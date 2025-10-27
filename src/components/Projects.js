@@ -94,7 +94,7 @@ const Projects = () => {
       ],
       highlights: ["Multi-platform integration for automated sourcing", "AI scoring algorithm with 6-dimensional evaluation", "Analytics dashboard with Excel/Google Sheets integration", "Reduced bias through data-driven evaluation"],
       image: "https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80",
-      videoUrl: "https://drive.google.com/file/d/1adayCkH0ReaWSe3PAmfDfunq1fK2Joyf/preview",
+      videoUrl: null,
       links: {
         demo: "https://linkedinsourcingagent.streamlit.app/",
         github: "https://github.com/mohansree14/linkedin_sourcing_agent.git"
