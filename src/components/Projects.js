@@ -22,7 +22,7 @@ const Projects = () => {
       ],
       highlights: ["Risk-explicit uncertainty bands for safer signals", "Interactive Streamlit UI with Plotly", "FastAPI microservice architecture", "Integrates with trading dashboards and backtesters"],
       image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80",
-      videoUrl: "/project-demo.mp4",
+      videoUrl: "https://drive.google.com/uc?export=download&id=18UfaeMerTuVYVAGIsNqeIvdrrkSTPOje",
       links: {
         demo: "https://bayesian-financial-forecasting.streamlit.app/",
         github: "https://github.com/mohansree14/Bayesian-Deep-Learning-for-Probabilistic-Financial-Forecasting.git",
@@ -46,7 +46,7 @@ const Projects = () => {
       ],
       highlights: ["TimeSformer for efficient video modeling", "Comprehensive data augmentation pipeline", "Real-time video processing capability", "Interactive web application interface"],
       image: "/Vitimage.png",
-      videoUrl: "/vit-demo.mp4",
+      videoUrl: "https://drive.google.com/uc?export=download&id=15OEMiBkNeH2IiFZskOk7QMJ1gsf2BrCQ",
       links: {
         demo: "https://action-recognition-using-vit.streamlit.app/",
         github: "https://github.com/AML-CW/Action-Recognition-Using-Vision-Transformers-",
@@ -70,7 +70,7 @@ const Projects = () => {
       ],
       highlights: ["BioBERT achieved highest F1 score (0.84)", "Comprehensive model comparison across classical, deep learning, and transformers", "Interactive web app with abbreviation/long-form highlighting", "Production-ready for clinical workflows"],
       image: "/tokenimage.jpg",
-      videoUrl: "/token-demo.mp4",
+      videoUrl: "https://drive.google.com/uc?export=download&id=1CPoPsxFZhNrQimTbLrQElLQ8iNXxsWPX",
       links: {
         demo: "https://token-classification.streamlit.app/",
         github: "https://github.com/mohansree14/Token-Classification.git",
@@ -94,7 +94,7 @@ const Projects = () => {
       ],
       highlights: ["Multi-platform integration for automated sourcing", "AI scoring algorithm with 6-dimensional evaluation", "Analytics dashboard with Excel/Google Sheets integration", "Reduced bias through data-driven evaluation"],
       image: "https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80",
-      videoUrl: "/linkedin-agent-demo.mp4",
+      videoUrl: "https://drive.google.com/uc?export=download&id=1adayCkH0ReaWSe3PAmfDfunq1fK2Joyf",
       links: {
         demo: "https://linkedinsourcingagent.streamlit.app/",
         github: "https://github.com/mohansree14/linkedin_sourcing_agent.git"
