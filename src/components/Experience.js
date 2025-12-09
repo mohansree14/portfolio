@@ -7,35 +7,35 @@ const Experience = () => {
   const experiences = [
     {
       id: 1,
+      role: 'Lead AI Engineer',
+      company: 'Cledion',
+      companyLink: 'https://www.cledion.com/',
+      period: 'Oct 2024 - Present',
+      icon: '📊',
+      summary: 'Political & Economic Intelligence Platform - Architecting distributed data pipelines and NLP systems',
+      achievements: [
+        'Architected distributed data pipeline processing 5TB+ of global news/text data using Apache Spark',
+        'Developed production NLP models for entity recognition and sentiment analysis with 94% accuracy',
+        'Created real-time geopolitical risk dashboard with Plotly Dash for enterprise clients',
+        'Established MLOps pipeline on AWS SageMaker for automated model deployment'
+      ],
+      technologies: ['Apache Spark', 'Hugging Face Transformers', 'spaCy', 'AWS SageMaker', 'Airflow', 'Plotly Dash', 'PostgreSQL']
+    },
+    {
+      id: 2,
       role: 'AI Lead & Cofounder',
       company: 'BSure',
-      companyLink: 'https://bsure.ai',
+      companyLink: undefined,
       period: 'Jan 2024 - Present',
       icon: '🚀',
-      summary: 'Leading AI product development and building innovative solutions',
+      summary: 'AI-Powered FashionTech Retail Platform - Building innovative multi-modal recommendation systems',
       achievements: [
         'Built multi-modal recommendation engine using CLIP + ResNet for fashion product matching',
         'Engineered 3D garment visualization system with Three.js, reducing return intent by 40%',
         'Developed microservices architecture with FastAPI, achieving <100ms inference latency',
         'Implemented A/B testing framework that increased user engagement by 22%'
       ],
-      technologies: ['CLIP', 'ResNet', 'Three.js', 'FastAPI', 'A/B Testing', 'Python']
-    },
-    {
-      id: 2,
-      role: 'Lead Data Engineer & AI Developer',
-      company: 'Cledion',
-      companyLink: 'https://www.cledion.com/',
-      period: 'Oct 2024 - Present',
-      icon: '📊',
-      summary: 'Architecting distributed data pipelines and NLP intelligence systems',
-      achievements: [
-        'Architected distributed data pipeline processing 5TB+ of global news/text data',
-        'Developed NLP models for geopolitical risk analysis with 94% accuracy',
-        'Created real-time intelligence dashboard with Plotly Dash for enterprise clients',
-        'Established MLOps pipeline on AWS SageMaker for automated deployment'
-      ],
-      technologies: ['AWS SageMaker', 'NLP', 'Plotly Dash', 'Data Engineering', 'MLOps', 'Python']
+      technologies: ['PyTorch', 'OpenCV', 'CLIP', 'Three.js', 'FastAPI', 'Docker', 'AWS Lambda', 'S3']
     },
     {
       id: 3,
