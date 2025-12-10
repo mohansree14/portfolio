@@ -82,7 +82,7 @@ My research focuses on applying deep learning techniques to solve real-world hea
     contact: `Contact Information:
 Email: mohansreevijayakumare@gmail.com
 Phone: +44 07887142359
-Location: Guildford, UK
+Location: London, UK
 LinkedIn: mohan-sreev
 GitHub: mohansree14
 I'm always open to collaborations and new opportunities!`,

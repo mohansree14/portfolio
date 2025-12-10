@@ -101,7 +101,7 @@ const Hero = () => {
               <span className="typing-cursor">|</span>
             </div>
             <br />
-            Based in Guildford, UK.
+            Based in London, UK.
           </h1>
 
           <p className="hero-description">
