@@ -2,7 +2,7 @@
 
 A professional, feature-rich portfolio website showcasing AI/ML projects, research work, and an intelligent AI chatbot powered by cutting-edge technology.
 
-**🌐 Live Portfolio:** https://mohansreevijayakumar.vercel.app/
+**🌐 Live Portfolio:** https://mohnasreevijayakumar.vercel.app/
 
 ---
 
@@ -252,7 +252,7 @@ This project is open source and available under the MIT License.
 
 ## 🤝 Connect
 
-- **Portfolio:** https://mohansreevijayakumar.vercel.app/
+- **Portfolio:** https://mohnasreevijayakumar.vercel.app/
 - **GitHub:** https://github.com/mohansree14
 - **Contact:** Use the portfolio contact form or chatbot
 
