@@ -8,7 +8,7 @@ const Research = () => {
     {
       id: 1,
       title: 'Alzheimer\'s: Unlocking Cellular Mechanisms with Hybrid Deep Learning',
-      duration: '2023 - 2024',
+      duration: '2024 - 2025',
       institution: 'University of Surrey, Surrey, United Kingdom',
       icon: '🧬',
       description: 'Scalable end-to-end ML framework for overcoming computational challenges in scRNA-seq data with predictive, interpretable insights.',
@@ -75,11 +75,11 @@ const Research = () => {
             Research & Innovation
           </h2>
           <p className="section-subtitle">Cutting-edge research projects exploring AI applications in healthcare, fashion technology, and computational neuroscience</p>
-          
+
           <div className="research-list">
             {projects.map((project) => (
-              <div 
-                key={project.id} 
+              <div
+                key={project.id}
                 className="research-card"
                 onClick={() => setSelectedProject(project)}
               >
@@ -106,7 +106,7 @@ const Research = () => {
         <div className="research-modal-overlay" onClick={() => setSelectedProject(null)}>
           <div className="research-modal" onClick={(e) => e.stopPropagation()}>
             <button className="modal-close" onClick={() => setSelectedProject(null)}>✕</button>
-            
+
             <div className="modal-header">
               {selectedProject.image && (
                 <div className="modal-image-container">

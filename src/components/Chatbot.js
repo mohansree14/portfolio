@@ -33,17 +33,38 @@ const Chatbot = () => {
 Technologies: Python, PyTorch, TensorFlow, AWS, FastAPI, Streamlit`,
     experience: `My professional experience includes:
 
-<strong>MSc AI Student & Researcher</strong>, University of Surrey (2023–2025)
-Conducting advanced AI research and coursework in machine learning and deep learning.
+<strong>Head of AI Engineering</strong>, Cledion (Oct 2024 – Present | Remote)
+Building a political intelligence platform with NLP and distributed data pipelines.
+• Built distributed data pipeline processing 5TB+ of global news/docs using Apache Spark
+• Developed production NLP models for entity recognition & sentiment analysis (94% accuracy)
+• Created real-time intelligence dashboard with Plotly Dash
+• Established full MLOps pipeline on AWS SageMaker
 
-<strong>Machine Learning Research Intern</strong>, Soft4Hire (Apr – Aug 2024)
-Designed recommendation models that lifted engagement by 40% and optimized ML pipelines on AWS Lambda for a 30% performance boost.
+<strong>AI Lead & Cofounder</strong>, BSure (Jan 2024 – Present)
+Leading AI for a FashionTech platform with computer vision & 3D visualization.
+• Architected multi-modal recommendation engine (CLIP + ResNet)
+• Engineered real-time 3D garment visualization with Three.js
+• Built microservices backend with FastAPI serving <100ms latency
+• Implemented A/B testing increasing engagement by 22%
 
-<strong>ML Engineer</strong>, DLK Technology (Jun – Jul 2023)
-Built end-to-end machine learning pipelines for production use.
+<strong>Machine Learning Engineer Intern</strong>, Soft4Hire (Mar – Nov 2024)
+Built hybrid recommendation systems deployed on AWS Lambda.
+• Hybrid recommendation engine (LightFM + BERT)
+• Deployed real-time inference on AWS Lambda (<200ms latency)
+• A/B testing framework drove 40% engagement increase
+• Containerized ML services with Docker
 
-<strong>AI Research Intern</strong>, ACMEGRADE (May – Jun 2023)
-Contributed to AI research projects focused on NLP and computer vision applications.
+<strong>Machine Learning Engineer Intern</strong>, DLK Technology (Jun – Aug 2023)
+Sales forecasting and anomaly detection for B2B analytics.
+• Built sales forecasting pipeline (Prophet, SARIMA) reducing error by 30%
+• Developed anomaly detection system with 95% precision
+• Deployed real-time analytics dashboard on AWS EC2
+
+<strong>AI Research Intern</strong>, ACMEGRADE (Mar – May 2023)
+Researching recommendation algorithms for movie platform.
+• Content-based recommendation engine (TF-IDF, Cosine Similarity)
+• Built Flask REST API serving 1000+ users
+• Optimized DB queries reducing response time by 40%
 
 I'm always eager to take on new challenges and collaborations!`,
     skills: `Technical Skills:
@@ -120,7 +141,7 @@ Guidelines:
       }
 
       const data = await response.json();
-      
+
       // Check if we got a valid response
       if (!data.choices || !data.choices[0]) {
         console.error('Invalid response format:', data);
@@ -153,13 +174,13 @@ Guidelines:
 
     // Generate bot response using Groq API
     const botResponseText = await generateResponse(userInput);
-    
+
     // Check if question is related to projects and add navigation link
     let actionLink = null;
     let actionLinkText = null;
-    
+
     const lowerInput = userInput.toLowerCase();
-    
+
     // Priority order: Check for specific topics FIRST
     if (lowerInput.includes('project') || lowerInput.includes('recent') || lowerInput.includes('worked on')) {
       // If question mentions projects, ALWAYS link to projects section
@@ -183,7 +204,7 @@ Guidelines:
       actionLink = '#education';
       actionLinkText = 'View Experience';
     }
-    
+
     setTimeout(() => {
       const botResponse = {
         id: messages.length + 2,
@@ -202,81 +223,112 @@ Guidelines:
     messagesEndRef.current?.scrollIntoView({ behavior: 'smooth' });
   }, [messages]);
 
+  const [showWelcome, setShowWelcome] = useState(false);
+
+  // Show welcome message after 2 seconds
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setShowWelcome(true);
+    }, 2000);
+    return () => clearTimeout(timer);
+  }, []);
+
+  // ... existing code ...
+
   return (
     <div className="chatbot-container">
+      {/* Welcome Bubble */}
+      {showWelcome && !isOpen && (
+        <div className="welcome-bubble" onClick={() => setIsOpen(true)}>
+          <button
+            className="welcome-close-btn"
+            onClick={(e) => {
+              e.stopPropagation();
+              setShowWelcome(false);
+            }}
+          >
+            ×
+          </button>
+          <p>Welcome! I'm Mohan's AI Assistant. How can I assist you today? 👋</p>
+        </div>
+      )}
+
       {/* Chat Button */}
-      <button 
+      <button
         className="chat-button"
-        onClick={() => setIsOpen(!isOpen)}
+        onClick={() => {
+          setIsOpen(!isOpen);
+          setShowWelcome(false);
+        }}
         title="Chat with Mohan's AI Assistant"
       >
-        {isOpen ? '✕' : '💬'}
+        {isOpen ? '✕' : '🤖'}
       </button>
 
       {/* Chat Window - Only show when isOpen is true */}
       {isOpen && (
         <div className="chatbot-overlay" onClick={() => setIsOpen(false)}>
           <div className="chat-window-fullscreen" onClick={(e) => e.stopPropagation()}>
-          <div className="chat-header">
-            <h3>🤖 Mohan's AI Assistant</h3>
-            <button 
-              className="close-btn"
-              onClick={() => setIsOpen(false)}
-            >
-              ✕
-            </button>
-          </div>
+            <div className="chat-header">
+              <h3>🤖 Mohan's AI Assistant</h3>
+              <button
+                className="close-btn"
+                onClick={() => setIsOpen(false)}
+              >
+                ✕
+              </button>
+            </div>
 
-          <div className="chat-messages">
-            {messages.map((msg) => (
-              <div key={msg.id} className={`message ${msg.sender}`}>
-                <div className="message-content">
-                  <div dangerouslySetInnerHTML={{ __html: msg.text }} />
-                  {msg.actionLink && (
-                    <button 
-                      className="action-link-btn"
-                      onClick={() => {
-                        window.location.href = msg.actionLink;
-                        setIsOpen(false);
-                      }}
-                    >
-                      {msg.actionLinkText} →
-                    </button>
-                  )}
+            <div className="chat-messages">
+              {messages.map((msg) => (
+                <div key={msg.id} className={`message ${msg.sender}`}>
+                  <div className="message-content">
+                    <div dangerouslySetInnerHTML={{ __html: msg.text }} />
+                    {msg.actionLink && (
+                      <button
+                        className="action-link-btn"
+                        onClick={() => {
+                          window.location.href = msg.actionLink;
+                          setIsOpen(false);
+                        }}
+                      >
+                        {msg.actionLinkText} →
+                      </button>
+                    )}
+                  </div>
+                  <div className="message-time">
+                    {msg.timestamp.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })}
+                  </div>
                 </div>
-                <div className="message-time">
-                  {msg.timestamp.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })}
+              ))}
+              {isLoading && (
+                <div className="message bot">
+                  <div className="message-content typing">
+                    <span></span><span></span><span></span>
+                  </div>
                 </div>
-              </div>
-            ))}
-            {isLoading && (
-              <div className="message bot">
-                <div className="message-content typing">
-                  <span></span><span></span><span></span>
-                </div>
-              </div>
-            )}
-            <div ref={messagesEndRef} />
-          </div>
+              )}
+              <div ref={messagesEndRef} />
+            </div>
 
-          <div className="chat-input-area">
-            <input
-              type="text"
-              placeholder="Ask me anything..."
-              value={inputValue}
-              onChange={(e) => setInputValue(e.target.value)}
-              onKeyPress={(e) => e.key === 'Enter' && handleSendMessage()}
-              disabled={isLoading}
-            />
-            <button 
-              onClick={handleSendMessage}
-              disabled={isLoading || !inputValue.trim()}
-              className="send-btn"
-            >
-              Send
-            </button>
+            <div className="chat-input-area">
+              <input
+                type="text"
+                placeholder="Ask me anything..."
+                value={inputValue}
+                onChange={(e) => setInputValue(e.target.value)}
+                onKeyPress={(e) => e.key === 'Enter' && handleSendMessage()}
+                disabled={isLoading}
+              />
+              <button
+                onClick={handleSendMessage}
+                disabled={isLoading || !inputValue.trim()}
+                className="send-btn"
+              >
+                Send
+              </button>
+            </div>
           </div>
-        </div>
         </div>
       )}
     </div>

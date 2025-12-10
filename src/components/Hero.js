@@ -4,11 +4,11 @@ import './Hero.css';
 const Hero = () => {
   const roles = [
     'MSc AI Student & Researcher',
+    'Head of AI Engineering',
+    'AI Technical Founder',
     'AI Developer',
     'Machine Learning Engineer',
-    'Data Scientist',
-    'Data Analyst',
-    'Prompt Engineer'
+    'MLOps Engineer'
   ];
 
   const [currentRoleIndex, setCurrentRoleIndex] = useState(0);
@@ -55,7 +55,7 @@ const Hero = () => {
             <div className="profile-image">
               <img src="/IMG_0241.JPG" alt="Profile" />
             </div>
-            
+
             <div className="status-badge">
               <span className="status-dot"></span>
               Available for work
@@ -83,7 +83,7 @@ const Hero = () => {
             </div>
 
             <div className="sidebar-buttons">
-              <a href="https://drive.google.com/file/d/1TLhVIua2nXwwp4RhJ2g6JgHBoOOJ_t91/view?usp=sharing" target="_blank" rel="noopener noreferrer" className="btn-download">📥 Download CV</a>
+              <a href="https://drive.google.com/file/d/18Cz-86DRXLygHRX1sOMl7ztkOhcp5Jhl/view?usp=sharing" target="_blank" rel="noopener noreferrer" className="btn-download">📥 Download CV</a>
               <a href="#contact" className="btn-contact">✈️ Contact Me</a>
             </div>
           </div>
@@ -92,7 +92,7 @@ const Hero = () => {
         {/* Right Content */}
         <div className="hero-content">
           <div className="greeting">👋 Say Hello</div>
-          
+
           <h1 className="hero-title">
             I'm <span className="highlight-word">Mohan Sree Vijayakumar</span>,
             <br />
@@ -105,26 +105,26 @@ const Hero = () => {
           </h1>
 
           <p className="hero-description">
-            Modern AI/ML engineer specializing in computer vision, NLP, and full-stack development. Building intelligent systems that solve real-world problems through cutting-edge machine learning and deep learning techniques.
+            Architecting AI systems that process 5TB+ data and serve 1,000+ users. Head of AI Engineering at two ventures, MSc AI student researching LLM optimization.
           </p>
 
           {/* Stats */}
           <div className="stats-container">
             <div className="stat">
-              <div className="stat-number">8+</div>
-              <div className="stat-label">ML/AI Projects</div>
+              <div className="stat-number">2</div>
+              <div className="stat-label">AI Platforms Built</div>
             </div>
             <div className="stat">
-              <div className="stat-number">24+</div>
-              <div className="stat-label">Technical Skills</div>
+              <div className="stat-number">12+</div>
+              <div className="stat-label">Production Deployments</div>
             </div>
             <div className="stat">
-              <div className="stat-number">3</div>
-              <div className="stat-label">Internships</div>
+              <div className="stat-number">5</div>
+              <div className="stat-label">Professional Experiences</div>
             </div>
             <div className="stat">
-              <div className="stat-number">97%+</div>
-              <div className="stat-label">Model Accuracy</div>
+              <div className="stat-number">5TB+</div>
+              <div className="stat-label">Data Processed</div>
             </div>
           </div>
         </div>

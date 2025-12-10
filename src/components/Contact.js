@@ -64,7 +64,7 @@ const Contact = () => {
           {/* Left Column - Contact Info */}
           <div className="contact-info">
             <h3 className="contact-heading">Let's Get in Touch!</h3>
-            
+
             <div className="contact-item">
               <span className="contact-icon">📞</span>
               <div className="contact-details">
@@ -72,7 +72,7 @@ const Contact = () => {
                 <p className="contact-value">+44 07887142359</p>
               </div>
             </div>
-            
+
             <div className="contact-item">
               <span className="contact-icon">📧</span>
               <div className="contact-details">
@@ -80,12 +80,12 @@ const Contact = () => {
                 <p className="contact-value">mohansreevijayakumare@gmail.com</p>
               </div>
             </div>
-            
+
             <div className="contact-item">
               <span className="contact-icon">📍</span>
               <div className="contact-details">
                 <p className="contact-label">Address</p>
-                <p className="contact-value">Guildford, UK</p>
+                <p className="contact-value">London, UK</p>
               </div>
             </div>
           </div>
@@ -93,48 +93,48 @@ const Contact = () => {
           {/* Right Column - Contact Form */}
           <form className="contact-form" onSubmit={handleSubmit}>
             <div className="form-group">
-              <input 
-                type="text" 
-                name="name" 
-                placeholder="Full Name" 
+              <input
+                type="text"
+                name="name"
+                placeholder="Full Name"
                 value={formData.name}
                 onChange={handleChange}
                 required
               />
             </div>
-            
+
             <div className="form-group">
-              <input 
-                type="email" 
-                name="email" 
-                placeholder="Email" 
+              <input
+                type="email"
+                name="email"
+                placeholder="Email"
                 value={formData.email}
                 onChange={handleChange}
                 required
               />
             </div>
-            
+
             <div className="form-group">
-              <input 
-                type="tel" 
-                name="phone" 
-                placeholder="Phone Number" 
+              <input
+                type="tel"
+                name="phone"
+                placeholder="Phone Number"
                 value={formData.phone}
                 onChange={handleChange}
               />
             </div>
-            
+
             <div className="form-group">
-              <textarea 
-                name="message" 
-                placeholder="Message" 
+              <textarea
+                name="message"
+                placeholder="Message"
                 rows="5"
                 value={formData.message}
                 onChange={handleChange}
                 required
               ></textarea>
             </div>
-            
+
             <button type="submit" className="btn-submit" disabled={isSubmitting}>
               {isSubmitting ? 'Sending...' : 'Send Message'}
             </button>

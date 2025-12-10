@@ -77,7 +77,7 @@ const Skills = () => {
       'AI & Deep Learning': '⚡',
       'Data Processing': '🔄',
       'Cloud & Big Data': '☁️',
-      'Programming': '�',
+      'Programming': '💻',
       'Frameworks & Tools': '🛠️'
     };
     return categoryIcons[category] || '⚙️';
@@ -91,7 +91,7 @@ const Skills = () => {
           Technical Expertise
         </h2>
         <p className='section-subtitle'>Specialized skills and technologies I work with</p>
-        
+
         <div className='skills-categories'>
           {Object.entries(skillsByCategory).map(([category, skills]) => (
             <div key={category} className='category-section'>
