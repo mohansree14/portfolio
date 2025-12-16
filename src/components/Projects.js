@@ -166,6 +166,29 @@ const Projects = () => {
         github: "https://github.com/mohansree14/skin-cancer-classification-usind-deeplearning.git",
         report: "https://drive.google.com/file/d/1LBY10ly5xCjtyd0aM53gzhbcQau8-8Ja/view?usp=sharing"
       }
+    },
+    {
+      id: 8,
+      title: "Global Trade Analytics Suite",
+      category: "Data Science & AI",
+      tech: "Python • Streamlit • Random Forest",
+      description: "Interactive analytics platform simulating and forecasting global trade patterns with 88% accuracy",
+      fullDescription: "Interactive analytics platform designed to simulate, visualize, and forecast international trade patterns. The system combines widespread geospatial analytics with machine learning to deliver actionable intelligence on global economic flows. It features a synthetic data engine, 3D geospatial intelligence, and AI-powered forecasting using Random Forest regression, all accessible via a professional-grade Streamlit dashboard.",
+      technologies: ["Python", "Streamlit", "Pandas", "Scikit-learn", "Plotly", "Random Forest", "Geospatial Analysis", "Data Visualization", "Machine Learning"],
+      achievements: [
+        "Developed synthetic data engine generating realistic trade transactions with tunable trends and seasonality",
+        "Implemented Random Forest model predicting future trade volumes with ~88% accuracy",
+        "Created 3D interactive orthographic globe visualization for export/import density analysis",
+        "Built dynamic dashboards highlighting seasonal trends and category-level performance",
+        "Designed professional UI allowing real-time model training and validation"
+      ],
+      highlights: ["AI-Powered Forecasting (~88% accuracy)", "3D Geospatial Intelligence", "Synthetic Data Generation Engine", "Real-time detailed Market Trend Analysis"],
+      image: "/global_trade.png",
+      videoUrl: "https://drive.google.com/file/d/1EipH7Gq3l9RmDZcMgewSwbDN2SoAbUQA/preview",
+      links: {
+        demo: "https://tradesuite.streamlit.app/",
+        github: "https://github.com/mohansree14/Global-Trade-Analytics-Suite"
+      }
     }
   ];
 
@@ -179,8 +202,8 @@ const Projects = () => {
           </h2>
           <div className="projects-grid">
             {projects.map(project => (
-              <div 
-                className="project-card" 
+              <div
+                className="project-card"
                 key={project.id}
                 onClick={() => setSelectedProject(project)}
               >
@@ -209,7 +232,7 @@ const Projects = () => {
         <div className="projects-modal-overlay" onClick={() => setSelectedProject(null)}>
           <div className="projects-modal" onClick={(e) => e.stopPropagation()}>
             <button className="modal-close" onClick={() => setSelectedProject(null)}>✕</button>
-            
+
             <div className="modal-header">
               <div className="modal-image-container">
                 <img src={selectedProject.image} alt={selectedProject.title} className="modal-image" />

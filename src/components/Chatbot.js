@@ -86,13 +86,13 @@ Location: London, UK
 LinkedIn: mohan-sreev
 GitHub: mohansree14
 I'm always open to collaborations and new opportunities!`,
-    education: `I'm currently pursuing MSc in Artificial Intelligence at University of Surrey, Guildford, UK (2023-2025). My studies focus on advanced machine learning, deep learning, natural language processing, and computer vision.`
+    education: `I'm currently pursuing MSc in Artificial Intelligence at University of Surrey, Guildford, UK (2025-2026). My studies focus on advanced machine learning, deep learning, natural language processing, and computer vision.`
   };
 
   const generateResponse = async (userMessage) => {
     try {
       if (!GROQ_API_KEY) {
-        return "Error: API key not configured. Please add REACT_APP_GROQ_API_KEY to your .env.local file.";
+        return "Error: API key not configured. Please check Vercel environment variables.";
       }
 
       const systemPrompt = `You are Mohan's AI assistant. You represent Mohan and answer questions about him in first person as if you are Mohan.
