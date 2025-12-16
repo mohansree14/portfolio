@@ -21,16 +21,17 @@ const Chatbot = () => {
   // Knowledge base about Mohan
   const knowledgeBase = {
     about: `I'm Mohan, an MSc AI Student & Researcher at University of Surrey, Guildford, UK. I'm passionate about machine learning, deep learning, and applying AI to solve real-world problems.`,
-    projects: `My 7 ML/AI projects include:
-1. Financial Time Series Forecasting - Predicting stock prices using LSTM networks
-2. Action Recognition with Vision Transformers - Video action recognition using ViT
-3. Token Classification - NER using transformer models
-4. LinkedIn Sourcing Agent - AI agent for candidate sourcing
-5. Sales Forecasting - Time series forecasting for sales prediction
-6. Movie Recommendation Engine - Collaborative filtering and content-based recommendations
-7. Skin Cancer Classification - Deep learning for medical image classification
+    projects: `My 8 ML/AI projects include:
+1. Global Trade Analytics Suite - Interactive analytics platform simulating and forecasting global trade patterns
+2. Financial Time Series Forecasting - Predicting stock prices using LSTM networks
+3. Action Recognition with Vision Transformers - Video action recognition using ViT
+4. Token Classification - NER using transformer models
+5. LinkedIn Sourcing Agent - AI agent for candidate sourcing
+6. Sales Forecasting - Time series forecasting for sales prediction
+7. Movie Recommendation Engine - Collaborative filtering and content-based recommendations
+8. Skin Cancer Classification - Deep learning for medical image classification
 
-Technologies: Python, PyTorch, TensorFlow, AWS, FastAPI, Streamlit`,
+Technologies: Python, PyTorch, TensorFlow, AWS, FastAPI, Streamlit, Scikit-learn, Plotly`,
     experience: `My professional experience includes:
 
 <strong>Head of AI Engineering</strong>, Cledion (Oct 2024 – Present | Remote)
