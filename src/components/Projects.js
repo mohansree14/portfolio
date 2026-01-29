@@ -189,6 +189,29 @@ const Projects = () => {
         demo: "https://tradesuite.streamlit.app/",
         github: "https://github.com/mohansree14/Global-Trade-Analytics-Suite"
       }
+    },
+    {
+      id: 9,
+      title: "Fruit Blitz VR (Meta Quest 2)",
+      category: "VR Game / XR Interaction",
+      tech: "Unity • C# • XR Interaction Toolkit",
+      description: "A VR fruit-slicing game built for Meta Quest 2, inspired by the 'Fruit Ninja' style of fast, physical slicing.",
+      fullDescription: "A VR fruit-slicing game built for Meta Quest 2, inspired by the 'Fruit Ninja' style of fast, physical slicing. Players slice incoming objects using a sword/weapon motion (physics-based line-cast slicing) to earn points (+10 per successful slice) while avoiding bombs that reduce health (3 hearts; game over at 0). Includes a menu scene and multiple playable scenes (Sword + Archer).",
+      technologies: ["Unity 2021.3.16f1", "C#", "XR Interaction Toolkit", "OpenXR", "Universal Render Pipeline (URP)", "TextMesh Pro", "EzySlice", "3D Modelling", "OOPS Concepts"],
+      achievements: [
+        "Built for Meta Quest 2 using Unity and XR Interaction Toolkit",
+        "Implemented physics-based line-cast slicing for realistic object interactions",
+        "Developed multiple playable scenes including Sword and Archer modes",
+        "Created dynamic scoring system with health management and bomb avoidance mechanics",
+        "Integrated Universal Render Pipeline (URP) for optimized VR performance"
+      ],
+      highlights: ["VR Fruit Slicing Mechanics", "Meta Quest 2 Support", "Physics-based Interactions", "Multiple Game Modes", "Optimized with URP"],
+      image: "/fruit-blitz-vr.jpg",
+      videoUrl: "https://drive.google.com/file/d/1XOF3ttsuJdCYPZf1vPpFGe26T8O0R1tw/preview",
+      links: {
+        github: "https://github.com/mohansree14/fruit-blitz-vr",
+        report: "https://drive.google.com/file/d/15lPUQK_CMSHrxqq2zgxbAIFdYM_FNdeE/view?usp=sharing"
+      }
     }
   ];
 
