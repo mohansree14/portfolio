@@ -1,16 +1,16 @@
 import React, { useState, useEffect } from 'react';
 import './Hero.css';
 
-const Hero = () => {
-  const roles = [
-    'MSc AI Student & Researcher',
-    'Head of AI Engineering',
-    'AI Technical Founder',
-    'AI Developer',
-    'Machine Learning Engineer',
-    'MLOps Engineer'
-  ];
+const roles = [
+  'MSc AI Student & Researcher',
+  'Head of AI Engineering',
+  'AI Technical Founder',
+  'AI Developer',
+  'Machine Learning Engineer',
+  'MLOps Engineer'
+];
 
+const Hero = () => {
   const [currentRoleIndex, setCurrentRoleIndex] = useState(0);
   const [displayedText, setDisplayedText] = useState('');
   const [isDeleting, setIsDeleting] = useState(false);
@@ -45,7 +45,7 @@ const Hero = () => {
     }
 
     return () => clearTimeout(timeout);
-  }, [displayedText, isDeleting, currentRoleIndex, roles]);
+  }, [displayedText, isDeleting, currentRoleIndex]);
   return (
     <section className="hero" id="home">
       <div className="hero-container">
