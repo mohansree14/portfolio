@@ -83,7 +83,7 @@ const Hero = () => {
             </div>
 
             <div className="sidebar-buttons">
-              <a href="https://drive.google.com/file/d/18Cz-86DRXLygHRX1sOMl7ztkOhcp5Jhl/view?usp=sharing" target="_blank" rel="noopener noreferrer" className="btn-download">📥 Download CV</a>
+              <a href="https://drive.google.com/file/d/1gPdVMmN_L4sSv3EvqQkvU3Tn29WgeoaI/view?usp=drive_link" target="_blank" rel="noopener noreferrer" className="btn-download">📥 Download CV</a>
               <a href="#contact" className="btn-contact">✈️ Contact Me</a>
             </div>
           </div>
