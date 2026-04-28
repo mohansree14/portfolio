@@ -10,61 +10,30 @@ const Experience = () => {
 
   const experiences = [
     {
-      id: 2,
-      title: 'Head of AI Engineering',
-      company: 'Cledion',
-      companyUrl: 'https://www.cledion.com/',
-      period: 'Oct 2024 – Present | Remote',
-      status: 'MVP Stage',
-      tagline: 'Political & Economic Intelligence Platform',
-      summary: 'Building a political intelligence platform with NLP and distributed data pipelines. Processing global data for real-time risk analytics.',
-      overview: 'As the sole AI specialist at Cledion, I architect and build the complete AI stack for a geopolitical intelligence platform that transforms unstructured global data into actionable insights for enterprise clients through scalable NLP systems and interactive dashboards.',
-      achievements: [
-        'Built distributed data pipeline processing 5TB+ of global news and legislative documents using Apache Spark',
-        'Developed production NLP models for entity recognition and sentiment analysis achieving 94% accuracy',
-        'Created real-time intelligence dashboard with Plotly Dash used by clients for risk monitoring',
-        'Established full MLOps pipeline on AWS SageMaker with automated retraining and deployment'
-      ],
-      techCategories: {
-        'AI/ML': ['Hugging Face Transformers', 'spaCy', 'Sentence Transformers'],
-        'Data Engineering': ['Apache Spark', 'Apache Airflow', 'PostgreSQL'],
-        'Cloud & Deployment': ['AWS (SageMaker, S3, Lambda)', 'Docker', 'Git'],
-        'Visualization': ['Plotly Dash', 'Streamlit']
-      },
-      impact: [
-        'Enabled clients to track geopolitical risks in real-time with interactive dashboards',
-        'Reduced data processing time from days to hours through distributed computing',
-        'Provided actionable intelligence for strategic decision-making in volatile markets'
-      ]
-    },
-    {
       id: 1,
-      title: 'AI Lead & Cofounder',
-      company: 'BSure',
-      companyUrl: 'https://bsure.ai',
-      period: 'Jan 2024 - Present',
-      status: 'MVP Stage',
-      icon: '🚀',
-      tagline: 'AI-Powered FashionTech Retail Platform',
-      summary: 'AI-powered FashionTech platform with computer vision and 3D visualization. Rapid prototyping for retail transformation.',
-      overview: 'Leading AI development for a FashionTech platform that combines computer vision, 3D visualization, and recommendation systems to transform online fashion retail through immersive shopping experiences.',
+      title: 'AI Developer',
+      company: 'GUARDIAN AI',
+      companyUrl: 'https://www.linkedin.com/company/guardian-aioffical/posts/?feedView=all',
+      period: 'Oct 2025 – Jan 2026 | Remote',
+      icon: '🛡️',
+      tagline: 'Enterprise AI Workflows & RAG Platforms',
+      summary: 'Architected Agentic Workflows and RAG pipelines for unstructured text analysis. Developed scalable model-serving architectures for enterprise clients.',
+      overview: 'As an AI Developer at GUARDIAN AI, I built and optimized agentic workflows and RAG pipelines using Vector Databases like FAISS. I engineered high-throughput, low-latency microservices with FastAPI for fraud detection and document classification.',
       achievements: [
-        'Architected multi-modal recommendation engine using CLIP + ResNet for fashion product matching',
-        'Engineered real-time 3D garment visualization with Three.js, reducing return intent through virtual try-on',
-        'Built microservices backend with FastAPI serving <100ms inference latency',
-        'Implemented A/B testing framework increasing user engagement by 22%'
+        'Architected Agentic Workflows and RAG pipelines for unstructured text analysis, utilizing Vector Databases (FAISS) to optimize retrieval relevance and minimize hallucinations',
+        'Implemented fine-tuned LLM logic for document classification, ensuring high-fidelity, compliant outputs within an Agile innovation lifecycle for enterprise clients',
+        'Developed scalable model-serving architectures using FastAPI and Microservices, focusing on delivering low-latency inference for high-throughput production environments',
+        'Engineered Python-based fraud detection interface to classify fraud scenarios from unstructured text using prompt engineering and structured validation'
       ],
       techCategories: {
-        'Computer Vision': ['PyTorch', 'OpenCV', 'CLIP', 'YOLO'],
-        '3D & Frontend': ['Three.js', 'WebGL', 'React'],
-        'Backend': ['FastAPI', 'Docker', 'PostgreSQL'],
-        'Cloud': ['AWS (Lambda, S3, EC2)'],
-        'Analytics': ['A/B Testing', 'Mixpanel']
+        'AI/ML': ['RAG', 'Agentic Workflows', 'FAISS', 'LLMs', 'Prompt Engineering'],
+        'Backend & Architecture': ['FastAPI', 'Microservices', 'Python'],
+        'Practices': ['Agile']
       },
       impact: [
-        'Created immersive shopping experience reducing product returns by 40%',
-        'Increased user session duration by 22% through personalized recommendations',
-        'Built investor-ready demo securing early platform validation and user adoption'
+        'Optimized retrieval relevance and minimized hallucinations in unstructured text analysis',
+        'Ensured high-fidelity, compliant model outputs for enterprise-grade applications',
+        'Delivered low-latency inference tailored for high-throughput production environments'
       ]
     },
     {
