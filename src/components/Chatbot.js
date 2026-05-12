@@ -20,66 +20,57 @@ const Chatbot = () => {
 
   // Knowledge base about Mohan
   const knowledgeBase = {
-    about: `I'm Mohan, an MSc AI Student & Researcher at University of Surrey, Guildford, UK. I'm passionate about machine learning, deep learning, and applying AI to solve real-world problems.`,
-    projects: `My 8 ML/AI projects include:
-1. Global Trade Analytics Suite - Interactive analytics platform simulating and forecasting global trade patterns
-2. Financial Time Series Forecasting - Predicting stock prices using LSTM networks
-3. Action Recognition with Vision Transformers - Video action recognition using ViT
-4. Token Classification - NER using transformer models
-5. LinkedIn Sourcing Agent - AI agent for candidate sourcing
-6. Sales Forecasting - Time series forecasting for sales prediction
-7. Movie Recommendation Engine - Collaborative filtering and content-based recommendations
-8. Skin Cancer Classification - Deep learning for medical image classification
-
-Technologies: Python, PyTorch, TensorFlow, AWS, FastAPI, Streamlit, Scikit-learn, Plotly`,
+    about: `I'm Mohan Sree Vijayakumar, an MSc AI Student & Researcher at the University of Surrey, Guildford, UK. I'm an AI Developer specializing in architecting Agentic Workflows and RAG platforms. I'm passionate about building scalable, high-impact AI systems that solve complex real-world problems.`,
+    projects: `My key AI projects include:
+1. AI-Powered LinkedIn Sourcing Agent - Recruitment automation platform with 10x faster candidate identification. (FastAPI, Google Gemini)
+2. Financial Time Series Forecasting - Equity forecasting with uncertainty quantification using LSTM and MC-dropout. (PyTorch, FastAPI)
+3. Action Recognition with Vision Transformers - Video action recognition using TimeSformer. (PyTorch)
+4. Token Classification - Biomedical abbreviation detection with BioBERT (F1: 0.84).
+5. Global Trade Analytics Suite - Interactive platform forecasting trade patterns with 88% accuracy.
+6. Sales Forecasting - Time series forecasting for business intelligence.
+7. Movie Recommendation Engine - Hybrid filtering with NLP analysis and Power BI dashboard.
+8. Skin Cancer Classification - Deep learning for medical image classification (96.08% accuracy).
+9. Fruit Blitz VR - Physics-based VR slicing game for Meta Quest 2.`,
     experience: `My professional experience includes:
 
-<strong>Head of AI Engineering</strong>, Cledion (Oct 2024 – Present | Remote)
-Building a political intelligence platform with NLP and distributed data pipelines.
-• Built distributed data pipeline processing 5TB+ of global news/docs using Apache Spark
-• Developed production NLP models for entity recognition & sentiment analysis (94% accuracy)
-• Created real-time intelligence dashboard with Plotly Dash
-• Established full MLOps pipeline on AWS SageMaker
+<strong>AI Developer</strong>, GUARDIAN AI (Oct 2025 – Jan 2026 | Remote)
+Architecting Agentic Workflows and RAG platforms for enterprise AI.
+• Architected Agentic Workflows and RAG pipelines using Vector Databases (FAISS)
+• Implemented fine-tuned LLM logic for high-fidelity document classification
+• Developed scalable model-serving architectures using FastAPI and Microservices
+• Engineered Python-based fraud detection interface using prompt engineering
 
-<strong>AI Lead & Cofounder</strong>, BSure (Jan 2024 – Present)
-Leading AI for a FashionTech platform with computer vision & 3D visualization.
-• Architected multi-modal recommendation engine (CLIP + ResNet)
-• Engineered real-time 3D garment visualization with Three.js
-• Built microservices backend with FastAPI serving <100ms latency
-• Implemented A/B testing increasing engagement by 22%
-
-<strong>Machine Learning Engineer Intern</strong>, Soft4Hire (Mar – Nov 2024)
-Built hybrid recommendation systems deployed on AWS Lambda.
-• Hybrid recommendation engine (LightFM + BERT)
-• Deployed real-time inference on AWS Lambda (<200ms latency)
-• A/B testing framework drove 40% engagement increase
+<strong>Machine Learning Engineer Intern</strong>, Soft4Hire (Mar 2024 – Nov 2024)
+Built hybrid recommendation systems for a social career platform.
+• Combined collaborative filtering (LightFM) with content-based filtering (BERT)
+• Deployed real-time inference on AWS Lambda with <200ms latency
+• Implemented A/B testing framework resulting in 40% increase in user engagement
 • Containerized ML services with Docker
 
-<strong>Machine Learning Engineer Intern</strong>, DLK Technology (Jun – Aug 2023)
+<strong>Machine Learning Engineer Intern</strong>, DLK Technology (Jun 2023 – Aug 2023)
 Sales forecasting and anomaly detection for B2B analytics.
 • Built sales forecasting pipeline (Prophet, SARIMA) reducing error by 30%
 • Developed anomaly detection system with 95% precision
 • Deployed real-time analytics dashboard on AWS EC2
+• Implemented automated data validation pipelines
 
-<strong>AI Research Intern</strong>, ACMEGRADE (Mar – May 2023)
+<strong>AI Research Intern</strong>, ACMEGRADE (Mar 2023 – May 2023)
 Researching recommendation algorithms for movie platform.
-• Content-based recommendation engine (TF-IDF, Cosine Similarity)
-• Built Flask REST API serving 1000+ users
-• Optimized DB queries reducing response time by 40%
-
-I'm always eager to take on new challenges and collaborations!`,
-    skills: `Technical Skills:
-Machine Learning: Regression, Classification, Clustering, Time Series Analysis
-AI & Deep Learning: Neural Networks, CNNs, RNNs, LSTMs, Transformers, GANs, Vision Transformers
-Data Processing: Data Cleaning, ETL Pipelines, Feature Engineering
-Cloud & Big Data: AWS, GCP, Apache Spark
-Programming Languages: Python, SQL, R, C++, JavaScript
-Frameworks & Tools: PyTorch, TensorFlow, FastAPI, Streamlit, Scikit-learn, Pandas, NumPy
-Specializations: Generative AI, Prompt Engineering, NLP, Computer Vision`,
+• Developed content-based recommendation engine (TF-IDF, Cosine Similarity)
+• Built and deployed Flask REST API serving 1,000+ users
+• Created analytics dashboard for recommendation performance
+• Optimized DB queries reducing response time by 40%`,
+    skills: `Technical Expertise:
+• Machine Learning: Statistics, Data Analytics, Scikit-learn
+• AI & Deep Learning: Generative AI, NLP, Transformers, Deep Learning
+• Data Processing: Data Cleaning, Data Wrangling, ETL Pipelines, Pandas
+• Cloud & Big Data: AWS (S3, EC2, SageMaker), GCP (BigQuery, DataFlow), Apache Spark, NumPy
+• Programming: Python, SQL, R, C++, JavaScript
+• Frameworks & Tools: PyTorch, TensorFlow, FastAPI, Streamlit, Git, Docker`,
     research: `My research areas:
-1. Alzheimer's Disease Detection - Using deep learning for early disease detection from medical imaging
-2. Virtual Fitting Room using GANs - Generative AI for virtual try-on applications
-My research focuses on applying deep learning techniques to solve real-world healthcare and e-commerce problems.`,
+1. Alzheimer's Disease Detection - Unlocking cellular mechanisms with Hybrid Deep Learning (CVAE + Spatial GNN) at University of Surrey.
+2. Virtual Fitting Room - AI-driven system using GANs for hyper-realistic fashion simulations.
+My research focuses on applying cutting-edge deep learning to healthcare, e-commerce, and computational neuroscience.`,
     contact: `Contact Information:
 Email: mohansreevijayakumare@gmail.com
 Phone: +44 07887142359
@@ -87,7 +78,7 @@ Location: London, UK
 LinkedIn: mohan-sreev
 GitHub: mohansree14
 I'm always open to collaborations and new opportunities!`,
-    education: `I'm currently pursuing MSc in Artificial Intelligence at University of Surrey, Guildford, UK (2025-2026). My studies focus on advanced machine learning, deep learning, natural language processing, and computer vision.`
+    education: `I'm pursuing an MSc in Artificial Intelligence at the University of Surrey, UK (2025-2026). My studies focus on advanced machine learning, deep learning, NLP, and computer vision.`
   };
 
   const generateResponse = async (userMessage) => {

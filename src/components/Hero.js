@@ -2,12 +2,11 @@ import React, { useState, useEffect } from 'react';
 import './Hero.css';
 
 const roles = [
-  'MSc AI Student & Researcher',
-  'Head of AI Engineering',
-  'AI Technical Founder',
   'AI Developer',
+  'MSc AI Student & Researcher',
   'Machine Learning Engineer',
-  'MLOps Engineer'
+  'MLOps Engineer',
+  'Generative AI Specialist'
 ];
 
 const Hero = () => {
@@ -105,26 +104,26 @@ const Hero = () => {
           </h1>
 
           <p className="hero-description">
-            Architecting AI systems that process 5TB+ data and serve 1,000+ users. Head of AI Engineering at two ventures, MSc AI student researching LLM optimization.
+            Architecting Agentic Workflows and RAG platforms for enterprise AI. AI Developer at Guardian AI, MSc AI student researching Hybrid Deep Learning for Alzheimer's detection.
           </p>
 
           {/* Stats */}
           <div className="stats-container">
             <div className="stat">
-              <div className="stat-number">2</div>
-              <div className="stat-label">AI Platforms Built</div>
+              <div className="stat-number">9+</div>
+              <div className="stat-label">AI Projects</div>
             </div>
             <div className="stat">
               <div className="stat-number">12+</div>
               <div className="stat-label">Production Deployments</div>
             </div>
             <div className="stat">
-              <div className="stat-number">5</div>
+              <div className="stat-number">4+</div>
               <div className="stat-label">Professional Experiences</div>
             </div>
             <div className="stat">
-              <div className="stat-number">5TB+</div>
-              <div className="stat-label">Data Processed</div>
+              <div className="stat-number">97%+</div>
+              <div className="stat-label">Model Accuracy</div>
             </div>
           </div>
         </div>
