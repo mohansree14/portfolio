@@ -180,7 +180,7 @@ const Experience = () => {
                   <div className="exp-icon">{exp.icon || '💼'}</div>
                   <div className="exp-content">
                     <div className="exp-header">
-                      <div>
+                      <div className="exp-title-wrapper">
                         <div className="exp-title-row">
                           <h3 className="exp-title">{exp.title}</h3>
                           {exp.status && <span className="exp-status-badge">{exp.status}</span>}
