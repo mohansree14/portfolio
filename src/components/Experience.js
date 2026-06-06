@@ -14,7 +14,7 @@ const Experience = () => {
       title: 'AI Automation Consultant & Trainer',
       company: 'Workforce Training & Development',
       companyUrl: 'https://www.linkedin.com/company/workforce-training-development/posts/?feedView=all',
-      period: 'Jun 2026 - Present | London, England, United Kingdom · Hybrid',
+      period: 'Jun 2026 - Present | London - UK | Hybrid',
       icon: '🎓',
       tagline: 'AI and Automation Practitioner apprenticeship programme',
       summary: 'Delivering the Level 4 AI and Automation Practitioner apprenticeship programme, equipping learners with practical skills to implement AI technologies, automation systems, and digital transformation strategies within real business environments.',
