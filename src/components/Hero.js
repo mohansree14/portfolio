@@ -52,7 +52,7 @@ const Hero = () => {
         <div className="hero-sidebar">
           <div className="profile-card">
             <div className="profile-image">
-              <img src="/IMG_0241.JPG" alt="Profile" />
+              <img src="/profile-new.jpg" alt="Profile" />
             </div>
 
             <div className="status-badge">

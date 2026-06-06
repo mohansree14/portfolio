@@ -10,6 +10,33 @@ const Experience = () => {
 
   const experiences = [
     {
+      id: 0,
+      title: 'AI Automation Consultant & Trainer',
+      company: 'Workforce Training & Development',
+      companyUrl: 'https://www.linkedin.com/company/workforce-training-development/posts/?feedView=all',
+      period: 'Jun 2026 - Present | London, England, United Kingdom · Hybrid',
+      icon: '🎓',
+      tagline: 'AI and Automation Practitioner apprenticeship programme',
+      summary: 'Delivering the Level 4 AI and Automation Practitioner apprenticeship programme, equipping learners with practical skills to implement AI technologies, automation systems, and digital transformation strategies within real business environments.',
+      overview: 'Delivering the Level 4 AI and Automation Practitioner apprenticeship programme, equipping learners with practical skills to implement AI technologies, automation systems, and digital transformation strategies within real business environments.',
+      achievements: [
+        'Teach core AI and machine learning principles, automation tools, data handling techniques, and responsible AI governance to apprentice cohorts across various industries.',
+        'Guide learners through end-to-end automation workflows — from analysing business processes to deploying AI-driven solutions that improve productivity and operational efficiency.',
+        'Produce practical tutorials and educational content on leading automation platforms including Make, Zapier, n8n, and ChatGPT, helping learners get hands-on experience with real-world tools.',
+        'Design beginner-friendly learning materials covering automation fundamentals — from building basic workflows to connecting apps and streamlining repetitive business tasks.',
+        'Communicate complex technical concepts clearly to learners from diverse backgrounds, bridging the gap between theory and workplace application.',
+        'Support learners in developing structured problem-solving approaches and analytical thinking skills aligned with industry expectations.',
+        'Contribute to a programme delivered by an Ofsted Good and ISO 9001 certified training provider.'
+      ],
+      techCategories: {
+        'AI & Automation': ['ChatGPT', 'Make', 'Zapier', 'n8n'],
+        'Skills': ['Training & Development', 'Problem Solving', 'Data Handling']
+      },
+      impact: [
+        'Equipped learners with practical skills to implement AI technologies, automation systems, and digital transformation strategies'
+      ]
+    },
+    {
       id: 1,
       title: 'AI Developer',
       company: 'GUARDIAN AI',
