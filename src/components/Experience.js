@@ -14,27 +14,26 @@ const Experience = () => {
       title: 'AI Automation Consultant & Trainer',
       company: 'Workforce Training & Development',
       companyUrl: 'https://www.linkedin.com/company/workforce-training-development/posts/?feedView=all',
-      period: 'Jun 2026 - Present | London - UK | Hybrid',
+      period: 'Jun 2026 - Present · 2 mos | London, England, United Kingdom · Hybrid',
       icon: '🎓',
-      tagline: 'AI and Automation Practitioner apprenticeship programme',
-      summary: 'Delivering the Level 4 AI and Automation Practitioner apprenticeship programme, equipping learners with practical skills to implement AI technologies, automation systems, and digital transformation strategies within real business environments.',
-      overview: 'Delivering the Level 4 AI and Automation Practitioner apprenticeship programme, equipping learners with practical skills to implement AI technologies, automation systems, and digital transformation strategies within real business environments.',
+      tagline: 'Full-time · AI Engineering + Apprenticeship Training',
+      summary: "Working as an AI Engineer and Trainer within the organisation's first AI engineering team, combining hands-on technical delivery with apprenticeship training on AI and automation.",
+      overview: "Working as an AI Engineer and Trainer within the organisation's first AI engineering team, combining hands-on technical delivery with apprenticeship training on AI and automation.",
       achievements: [
-        'Teach core AI and machine learning principles, automation tools, data handling techniques, and responsible AI governance to apprentice cohorts across various industries.',
-        'Guide learners through end-to-end automation workflows — from analysing business processes to deploying AI-driven solutions that improve productivity and operational efficiency.',
-        'Produce practical tutorials and educational content on leading automation platforms including Make, Zapier, n8n, and ChatGPT, helping learners get hands-on experience with real-world tools.',
-        'Design beginner-friendly learning materials covering automation fundamentals — from building basic workflows to connecting apps and streamlining repetitive business tasks.',
-        'Communicate complex technical concepts clearly to learners from diverse backgrounds, bridging the gap between theory and workplace application.',
-        'Support learners in developing structured problem-solving approaches and analytical thinking skills aligned with industry expectations.',
-        'Contribute to a programme delivered by an Ofsted Good and ISO 9001 certified training provider.'
+        'Deliver the Level 4 AI & Automation Practitioner apprenticeship, teaching core AI/ML principles, automation tooling (Make, Zapier, n8n, ChatGPT), data handling, and responsible AI governance to apprentice cohorts across industries.',
+        'Guide learners through end-to-end automation workflows — from analysing business processes to deploying AI-driven solutions that improve productivity.',
+        'Contribute training content to the Level 5 AI Leadership programme, communicating AI capabilities and limitations clearly to business owners, CEOs, and directors.',
+        'Produce practical tutorials and beginner-friendly learning materials on leading automation platforms, bridging the gap between theory and workplace application.',
+        'Contribute to a programme delivered by an Ofsted Good and ISO 9001 certified training provider.',
+        'Build and troubleshoot an agentic Generative AI sales system that integrates LLM APIs with market-research tooling, as part of a two-person AI engineering team.',
+        'Mentor a junior intern on implementation and debugging while remaining hands-on across the build.',
+        'Collaborate directly with the CEO on project scope, documentation, and delivery in a fast-paced startup environment.'
       ],
       techCategories: {
         'AI & Automation': ['ChatGPT', 'Make', 'Zapier', 'n8n'],
-        'Skills': ['Training & Development', 'Problem Solving', 'Data Handling']
-      },
-      impact: [
-        'Equipped learners with practical skills to implement AI technologies, automation systems, and digital transformation strategies'
-      ]
+        'Engineering': ['LLM APIs', 'Agentic AI', 'Market Research Tooling'],
+        'Skills': ['Training & Development', 'Mentoring', 'Stakeholder Communication']
+      }
     },
     {
       id: 1,

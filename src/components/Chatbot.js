@@ -75,7 +75,7 @@ My research focuses on applying cutting-edge deep learning to healthcare, e-comm
 Email: mohansreevijayakumare@gmail.com
 Phone: +44 07887142359
 Location: London, UK
-LinkedIn: mohan-sreev
+LinkedIn: mohansree-vijyakumar
 GitHub: mohansree14
 I'm always open to collaborations and new opportunities!`,
     education: `I'm pursuing an MSc in Artificial Intelligence at the University of Surrey, UK (2025-2026). My studies focus on advanced machine learning, deep learning, NLP, and computer vision.`
